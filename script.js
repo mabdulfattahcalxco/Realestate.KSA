@@ -98,10 +98,10 @@ const animateCounter = (element, target, duration = 2000) => {
     const timer = setInterval(() => {
         start += increment;
         if (start >= target) {
-            element.textContent = Math.ceil(target).toLocaleString();
+            element.textContent = Math.ceil(target);
             clearInterval(timer);
         } else {
-            element.textContent = Math.ceil(start).toLocaleString();
+            element.textContent = Math.ceil(start);
         }
     }, 16);
 };
